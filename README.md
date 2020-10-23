@@ -3,16 +3,19 @@
 ## Como usar
 
  - Hoje é feriado?
-
-` BrazilHolidays.Net.Today.IsHoliday(); `
+```csharp 
+BrazilHolidays.Net.Today.IsHoliday(); 
+```
 
 - Hoje não é feriado?
-
-` BrazilHolidays.Net.Today.IsNotHoliday() `
+```csharp 
+BrazilHolidays.Net.Today.IsNotHoliday()
+```
 
 - Uma data especifica é feriado?
-
-` new DateTime(Year, 12, 25).IsHoliday() `
+```csharp  
+new DateTime(Year, 12, 25).IsHoliday()
+```
 
 ## Testes
 O projeto incluí testes:
