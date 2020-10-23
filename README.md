@@ -1,5 +1,8 @@
 # BrazilHolidays.Net
 
+ - Instale [este pacote](https://www.nuget.org/packages/BrazilHolidays.Net) via nuget ou linha de comando:<br/>
+`Install-Package https://www.nuget.org/packages/BrazilHolidays.Net`
+
 ## Como usar
 
  - Hoje é feriado?
