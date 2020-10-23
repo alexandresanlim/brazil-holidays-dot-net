@@ -14,7 +14,7 @@ BrazilHolidays.Net.Today.IsNotHoliday()
 
 - Uma data especifica é feriado?
 ```csharp  
-new DateTime(Year, 12, 25).IsHoliday()
+new DateTime(2020, 12, 25).IsHoliday()
 ```
 
 ## Testes
