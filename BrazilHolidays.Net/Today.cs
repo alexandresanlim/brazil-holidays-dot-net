@@ -7,14 +7,14 @@ namespace BrazilHolidays.Net
 {
     public static class Today
     {
-        public static bool TodayIsHoliday()
+        public static bool IsHoliday()
         {
             return DateTime.Today.IsHoliday();
         }
 
-        public static bool TodayIsNotHoliday()
+        public static bool IsNotHoliday()
         {
-            return !TodayIsHoliday();
+            return !IsHoliday();
         }
     }
 }

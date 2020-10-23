@@ -1,4 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 
 namespace UnitTest
 {
@@ -8,12 +9,12 @@ namespace UnitTest
         [TestMethod]
         public void TodayIsHoliday()
         {
-            var todayIsHoliday = BrazilHolidays.Net.Today.TodayIsHoliday();
+            var isHoliday = BrazilHolidays.Net.Today.IsHoliday();
         }
         [TestMethod]
         public void TodayIsNotHoliday()
         {
-            var todayIsNotHoliday = BrazilHolidays.Net.Today.TodayIsNotHoliday();
+            var isHoliday = BrazilHolidays.Net.Today.IsNotHoliday();
         }
     }
 }
