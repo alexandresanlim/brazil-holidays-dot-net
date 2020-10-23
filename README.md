@@ -23,7 +23,7 @@ new DateTime(2020, 12, 25).IsHoliday()
 ```
 
 ## Testes
-O projeto incluí testes:
+Este projeto incluí:
 - Feriados para o ano corrente
 - Feriados para datas móveis em um ano bissexto e não bissexto.
 - Se a data atual é feriado
