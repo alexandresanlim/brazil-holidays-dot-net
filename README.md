@@ -22,8 +22,8 @@ BrazilHolidays.Net.Today.IsNotHoliday()
 new DateTime(2020, 12, 25).IsHoliday()
 ```
 
-## Testes
-Este projeto incluí:
+
+### Este projeto incluí testes:
 - Feriados para o ano corrente
 - Feriados para datas móveis em um ano bissexto e não bissexto.
 - Se a data atual é feriado
