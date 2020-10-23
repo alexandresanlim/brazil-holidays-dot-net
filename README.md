@@ -1,7 +1,7 @@
 # BrazilHolidays.Net
 
  - Instale [este pacote](https://www.nuget.org/packages/BrazilHolidays.Net) via nuget ou linha de comando:<br/>
-`Install-Package https://www.nuget.org/packages/BrazilHolidays.Net`
+`Install-Package BrazilHolidays.Net`
 
 ## Como usar
 
