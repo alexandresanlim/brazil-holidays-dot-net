@@ -1,8 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using System.Collections.Generic;
-using System.Text;
-using BrazilHolidays.Net.Extention;
+using BrazilHolidays.Net.DataStore;
 
 namespace UnitTest
 {

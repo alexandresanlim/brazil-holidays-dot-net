@@ -1,4 +1,4 @@
-﻿using BrazilHolidays.Net.Extention;
+﻿using BrazilHolidays.Net.DataStore;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -10,6 +10,32 @@ namespace BrazilHolidays.Net
         public static bool IsHoliday()
         {
             return DateTime.Today.IsHoliday();
+        }
+
+        public static bool IsNotHoliday()
+        {
+            return !IsHoliday();
+        }
+    }
+
+    public static class Tomorrow
+    {
+        public static bool IsHoliday()
+        {
+            return DateTime.Today.AddDays(1).IsHoliday();
+        }
+
+        public static bool IsNotHoliday()
+        {
+            return !IsHoliday();
+        }
+    }
+
+    public static class Yesterday
+    {
+        public static bool IsHoliday()
+        {
+            return DateTime.Today.AddDays(-1).IsHoliday();
         }
 
         public static bool IsNotHoliday()
