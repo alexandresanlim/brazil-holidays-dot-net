@@ -12,11 +12,6 @@
 BrazilHolidays.Net.Today.IsHoliday(); 
 ```
 
-- Hoje não é feriado?
-```csharp 
-BrazilHolidays.Net.Today.IsNotHoliday()
-```
-
 - Uma data especifica é feriado?
 ```csharp  
 new DateTime(2020, 12, 25).IsHoliday()
