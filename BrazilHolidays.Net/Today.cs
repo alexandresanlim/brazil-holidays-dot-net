@@ -1,4 +1,4 @@
-﻿using BrazilHolidays.Net.DataStore;
+﻿using BrazilHolidays.Net;
 using System;
 using System.Collections.Generic;
 using System.Text;

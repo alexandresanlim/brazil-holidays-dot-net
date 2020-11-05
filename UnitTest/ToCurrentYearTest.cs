@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using BrazilHolidays.Net.DataStore;
+using BrazilHolidays.Net;
 
 namespace UnitTest
 {

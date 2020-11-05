@@ -15,25 +15,31 @@ namespace UnitTest
         [TestMethod]
         public void TodayIsNotHoliday()
         {
-            var isHoliday = BrazilHolidays.Net.Today.IsNotHoliday();
+            var isNotHoliday = BrazilHolidays.Net.Today.IsNotHoliday();
         }
 
         [TestMethod]
         public void GetAllNext()
         {
-            var a = BrazilHolidays.Net.DataStore.Holiday.GetAllNext();
+            var a = BrazilHolidays.Net.Holiday.GetAllNext();
         }
 
         [TestMethod]
         public void GetOld()
         {
-            var old = BrazilHolidays.Net.DataStore.Holiday.GetOld();
+            var old = BrazilHolidays.Net.Holiday.GetOld();
         }
 
         [TestMethod]
-        public void GetAllNextByMonth()
+        public void GetNext()
         {
-            var m = BrazilHolidays.Net.DataStore.Holiday.GetAllNextByMonth(2);
+            var old = BrazilHolidays.Net.Holiday.GetNext();
+        }
+
+        [TestMethod]
+        public void GetAllByMonth()
+        {
+            var m = BrazilHolidays.Net.Holiday.GetAllByMonth(BrazilHolidays.Net.Holiday.Months.Dec);
         }
     }
 }

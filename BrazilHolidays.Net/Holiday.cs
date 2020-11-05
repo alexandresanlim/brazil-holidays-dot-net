@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BrazilHolidays.Net.DataStore
+namespace BrazilHolidays.Net
 {
     public class Holiday
     {
@@ -28,9 +28,9 @@ namespace BrazilHolidays.Net.DataStore
             CustomHolidayList.AddRange(holidayToAddInCustomList);
         }
 
-        public static IList<Holiday> GetAllNextByMonth(int month)
+        public static IList<Holiday> GetAllByMonth(Months month)
         {
-            return GetAllNext().Where(x => x.Date.Month == month).ToList();
+            return GetAllNext().Where(x => x.Date.Month == (int)month).ToList();
         }
 
         public static Holiday GetNext()
@@ -164,6 +164,22 @@ namespace BrazilHolidays.Net.DataStore
             SextaFeiraSanta,
             Carnaval,
             CorpusChristi
+        }
+
+        public enum Months
+        {
+            Jan = 1,
+            Feb,
+            Mar,
+            Apr,
+            May,
+            Jun,
+            Jul,
+            Aug,
+            Sep,
+            Oct,
+            Nov,
+            Dec
         }
     }
 

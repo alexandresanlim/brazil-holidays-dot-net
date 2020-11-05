@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using BrazilHolidays.Net.DataStore;
+using BrazilHolidays.Net;
 
 namespace UnitTest
 {
