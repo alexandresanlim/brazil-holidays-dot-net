@@ -19,22 +19,22 @@ new DateTime(2020, 12, 25).IsHoliday()
 
 - Lista dos próximos feriados (Get a list of next holidays)
 ```csharp  
-BrazilHolidays.Net.DataStore.Holiday.GetAllNext();
+BrazilHolidays.Net.Holiday.GetAllNext();
 ```
 
 - Pegar o ultimo (Get the last holiday)
 ```csharp  
-BrazilHolidays.Net.DataStore.Holiday.GetOld();
+BrazilHolidays.Net.Holiday.GetOld();
 ```
 
 - Pegar o próximo (Get the next holiday)
 ```csharp  
-BrazilHolidays.Net.DataStore.Holiday.GetNext();
+BrazilHolidays.Net.Holiday.GetNext();
 ```
 
 - Pegar todos de um determinado mês (Get a list by month)
 ```csharp  
-BrazilHolidays.Net.DataStore.Holiday.GetAllByMonth(BrazilHolidays.Net.DataStore.Holiday.Months.Dec);
+BrazilHolidays.Net.Holiday.GetAllByMonth(BrazilHolidays.Net.DataStore.Holiday.Months.Dec);
 ```
 
 ### Este projeto incluí testes:
