@@ -6,7 +6,7 @@
     <PackageProjectUrl>https://github.com/alexandresanlim/BrazilHolidays.Net</PackageProjectUrl>
     <RepositoryUrl>https://github.com/alexandresanlim/BrazilHolidays.Net</RepositoryUrl>
     <PackageTags>Brazil;Brasil;Holiday,Holidays,Feriados,Feriado</PackageTags>
-    <Description>Teste se uma data especifia ou se a data atual é um feriado, incluindo feriados móveis como Pascoa, Sexta-Feira Santa, e etc...</Description>
+    <Description>Teste se uma data especifia ou se a data atual é um feriado, incluindo feriados móveis como Páscoa, Sexta-Feira Santa, e etc... Suporte a ano bisexto</Description>
     <Version>1.0.1</Version>
   </PropertyGroup>
 

@@ -19,16 +19,8 @@ namespace UnitTest
         [TestMethod]
         public void WillHappenDiaDoTrabalho()
         {
-            var natal = BrazilHolidays.Net.DataStore.Holiday.GetOneByYear(BrazilHolidays.Net.DataStore.Holiday.HolidayIdentity.Natal, DateTime.Now.Year);
-            var daysToNatal = natal.HappenInDays();
-
-            var a = Holiday.GetAllNext();
-
-            var next = Holiday.GetNext();
-
-            var old = Holiday.GetOld();
-
-            var m = Holiday.GetAllByMonth(2);
+            var diaDoTrabalho = BrazilHolidays.Net.DataStore.Holiday.GetOneByYear(BrazilHolidays.Net.DataStore.Holiday.HolidayIdentity.DiaDoTrabalho, DateTime.Now.Year);
+            var daysToDiaDoTrabalho = diaDoTrabalho.HappenInDays();
         }
     }
 }

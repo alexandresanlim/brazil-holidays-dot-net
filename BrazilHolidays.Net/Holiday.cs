@@ -28,34 +28,33 @@ namespace BrazilHolidays.Net.DataStore
             CustomHolidayList.AddRange(holidayToAddInCustomList);
         }
 
-
-        public static IList<Holiday> GetAllByMonth(int month)
+        public static IList<Holiday> GetAllNextByMonth(int month)
         {
             return GetAllNext().Where(x => x.Date.Month == month).ToList();
         }
 
         public static Holiday GetNext()
         {
-            return GetAllNext().FirstOrDefault(x => x.Date >= DateTime.Today);
+            return GetAllNext().FirstOrDefault();
         }
 
         public static Holiday GetOld()
         {
-            return GetAllNext().FirstOrDefault(x => x.Date < DateTime.Today);
+            return GetAllByYear(DateTime.Now.Year).LastOrDefault(x => x.Date <= DateTime.Today);
         }
 
         public static IList<Holiday> GetAllNext()
         {
             var actualMonth = DateTime.Now.Month;
 
-            var nextActualYear = GetAllByYear(DateTime.Now.Year).Where(x => x.Date.Month >= actualMonth);
-            var nextNextYear = GetAllByYear(DateTime.Now.Year + 1).Where(x => x.Date.Month < actualMonth);
+            var nextActualYear = GetAllByYear(DateTime.Now.Year).Where(x => x.Date.Month >= actualMonth && x.Date >= DateTime.Now.Date);
+            var nextNextYear = GetAllByYear(DateTime.Now.Year + 1).Where(x => x.Date.Month <= actualMonth);
 
             var l = new List<Holiday>();
             l.AddRange(nextActualYear);
             l.AddRange(nextNextYear);
 
-            return l;
+            return l.OrderBy(x => x.Date).ToList();
         }
 
         /// <summary>
@@ -143,7 +142,7 @@ namespace BrazilHolidays.Net.DataStore
 
             #endregion
 
-            return holidayList;
+            return holidayList.OrderBy(z => z.Date).ToList();
         }
 
         public static Holiday GetOneByYear(HolidayIdentity identity, int? yearParameter = null)
