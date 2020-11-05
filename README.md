@@ -7,7 +7,7 @@
 
 ## Como usar
 
- - Hoje é feriado? (Is today a holidary?)
+ - Hoje é feriado? (Is today a holiday?)
 ```csharp 
 BrazilHolidays.Net.Today.IsHoliday(); 
 ```
