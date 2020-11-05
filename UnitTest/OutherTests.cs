@@ -4,7 +4,7 @@ using System;
 namespace UnitTest
 {
     [TestClass]
-    public class ToToday
+    public class OutherTests
     {
         [TestMethod]
         public void TodayIsHoliday()
