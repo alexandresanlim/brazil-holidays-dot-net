@@ -17,6 +17,30 @@ BrazilHolidays.Net.Today.IsHoliday();
 new DateTime(2020, 12, 25).IsHoliday()
 ```
 
+- Lista dos próximos feriados
+```csharp  
+BrazilHolidays.Net.DataStore.Holiday.GetAllNext();
+```
+
+- Pegar o ultimo
+```csharp  
+BrazilHolidays.Net.DataStore.Holiday.GetOld();
+```
+
+- Pegar o próximo
+```csharp  
+BrazilHolidays.Net.DataStore.Holiday.GetNext();
+```
+
+- Pegar o próximo
+```csharp  
+BrazilHolidays.Net.DataStore.Holiday.GetNext();
+```
+
+- Pegar todos de um determinado mês
+```csharp  
+BrazilHolidays.Net.DataStore.Holiday.GetAllByMonth(BrazilHolidays.Net.DataStore.Holiday.Months.Dec);
+```
 
 ### Este projeto incluí testes:
 - Feriados para o ano corrente
