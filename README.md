@@ -7,37 +7,32 @@
 
 ## Como usar
 
- - Hoje é feriado?
+ - Hoje é feriado? (Is today a holidary?)
 ```csharp 
 BrazilHolidays.Net.Today.IsHoliday(); 
 ```
 
-- Uma data especifica é feriado?
+- Uma data especifica é feriado? (Is a date a holiday?)
 ```csharp  
 new DateTime(2020, 12, 25).IsHoliday()
 ```
 
-- Lista dos próximos feriados
+- Lista dos próximos feriados (Get a list of next holidays)
 ```csharp  
 BrazilHolidays.Net.DataStore.Holiday.GetAllNext();
 ```
 
-- Pegar o ultimo
+- Pegar o ultimo (Get the last holiday)
 ```csharp  
 BrazilHolidays.Net.DataStore.Holiday.GetOld();
 ```
 
-- Pegar o próximo
+- Pegar o próximo (Get the next holiday)
 ```csharp  
 BrazilHolidays.Net.DataStore.Holiday.GetNext();
 ```
 
-- Pegar o próximo
-```csharp  
-BrazilHolidays.Net.DataStore.Holiday.GetNext();
-```
-
-- Pegar todos de um determinado mês
+- Pegar todos de um determinado mês (Get a list by month)
 ```csharp  
 BrazilHolidays.Net.DataStore.Holiday.GetAllByMonth(BrazilHolidays.Net.DataStore.Holiday.Months.Dec);
 ```
