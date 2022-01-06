@@ -3,7 +3,9 @@
 [![Nuget](https://img.shields.io/nuget/v/BrazilHolidays.Net)](https://www.nuget.org/packages/BrazilHolidays.Net)
 
  Instale [este pacote](https://www.nuget.org/packages/BrazilHolidays.Net) via nuget ou linha de comando:<br/>
-`Install-Package BrazilHolidays.Net`
+```nuget
+Install-Package BrazilHolidays.Net
+```
 
 ## Como usar
 
