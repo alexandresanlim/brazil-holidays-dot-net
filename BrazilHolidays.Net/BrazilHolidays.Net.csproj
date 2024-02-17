@@ -8,6 +8,23 @@
     <PackageTags>Brazil;Brasil;Holiday,Holidays,Feriados,Feriado</PackageTags>
     <Description>Teste se uma data especifia ou se a data atual é um feriado, incluindo feriados móveis como Páscoa, Sexta-Feira Santa, e etc... Suporte a ano bisexto</Description>
     <Version>1.0.4</Version>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageReleaseNotes>- Adicionado dia da consciência negra
+- Adicionado suporte para o .net8
+- Melhorias de performance</PackageReleaseNotes>
+    <Title>Brazil Holidays - Feriados no Brasil</Title>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
