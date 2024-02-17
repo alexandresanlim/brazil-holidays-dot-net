@@ -1,8 +1,6 @@
 ﻿using BrazilHolidays.Net;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace UnitTest
 {
@@ -12,14 +10,14 @@ namespace UnitTest
         [TestMethod]
         public void WillHappenNatal()
         {
-            var natal = BrazilHolidays.Net.Holiday.GetOneByYear(BrazilHolidays.Net.Holiday.HolidayIdentity.Natal, DateTime.Now.Year);
+            var natal = Holiday.GetOneByYear(HolidayIdentity.Natal, DateTime.Now.Year);
             var daysToNatal = natal.HappenInDays();
         }
 
         [TestMethod]
         public void WillHappenDiaDoTrabalho()
         {
-            var diaDoTrabalho = BrazilHolidays.Net.Holiday.GetOneByYear(BrazilHolidays.Net.Holiday.HolidayIdentity.DiaDoTrabalho, DateTime.Now.Year);
+            var diaDoTrabalho = Holiday.GetOneByYear(HolidayIdentity.DiaDoTrabalho, DateTime.Now.Year);
             var daysToDiaDoTrabalho = diaDoTrabalho.HappenInDays();
         }
     }

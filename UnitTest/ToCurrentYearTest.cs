@@ -52,6 +52,12 @@ namespace UnitTest
         }
 
         [TestMethod]
+        public void ConscienciaNegra()
+        {
+            Assert.IsTrue(new DateTime(Year, 11, 20).IsHoliday());
+        }
+
+        [TestMethod]
         public void Natal()
         {
             Assert.IsTrue(new DateTime(Year, 12, 25).IsHoliday());
