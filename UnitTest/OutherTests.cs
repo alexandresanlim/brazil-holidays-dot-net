@@ -1,3 +1,4 @@
+using BrazilHolidays.Net;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
@@ -9,37 +10,43 @@ namespace UnitTest
         [TestMethod]
         public void TodayIsHoliday()
         {
-            var isHoliday = BrazilHolidays.Net.Today.IsHoliday();
+            var isHoliday = Today.IsHoliday();
+            Assert.IsNotNull(isHoliday);
         }
 
         [TestMethod]
         public void TodayIsNotHoliday()
         {
-            var isNotHoliday = BrazilHolidays.Net.Today.IsNotHoliday();
+            var isNotHoliday = Today.IsNotHoliday();
+            Assert.IsNotNull(isNotHoliday);
         }
 
         [TestMethod]
         public void GetAllNext()
         {
-            var a = BrazilHolidays.Net.Holiday.GetAllNext();
+            var list = Holiday.GetAllNext();
+            Assert.IsNotNull(list);
         }
 
         [TestMethod]
         public void GetOld()
         {
-            var old = BrazilHolidays.Net.Holiday.GetOld();
+            var list = Holiday.GetOld();
+            Assert.IsNotNull(list);
         }
 
         [TestMethod]
         public void GetNext()
         {
-            var old = BrazilHolidays.Net.Holiday.GetNext();
+            var list = Holiday.GetNext();
+            Assert.IsNotNull(list);
         }
 
         [TestMethod]
         public void GetAllByMonth()
         {
-            var m = BrazilHolidays.Net.Holiday.GetAllByMonth(BrazilHolidays.Net.Holiday.Months.Dec);
+            var list = Holiday.GetAllByMonth(Months.Dec);
+            Assert.IsNotNull(list);
         }
     }
 }
